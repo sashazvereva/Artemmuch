@@ -173,24 +173,12 @@ h1, h2, h3, h4, h5 {
 	z-index: 1;
 }
 
-
-.intro_text {
-	justify-content: center;
-	display: flex;
-	align-items: baseline;
-	flex-direction: column;
-}
-
-.intro_text_item {
-	margin-left: 50%;
-}
-
 .intro_name {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
 	font-size: 40px;
+	width: 400px;
 	color: #FFFFFF;
-	margin-bottom: 20px;
 	align-self: center;
 	vertical-align: center;
 
@@ -203,11 +191,14 @@ h1, h2, h3, h4, h5 {
 
 .intro_profession {
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 	font-weight: 700;
 	font-size: 20px;
 	color: #FFFFFF;
 	vertical-align: center;
-	margin-top: 0px;
+
+	top: 20px;
+	left: -50px;
 }
 
 .intro_profession span {
@@ -218,12 +209,14 @@ h1, h2, h3, h4, h5 {
 
 .intro_profession2 {
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 	font-weight: 700;
 	font-size: 20px;
 	color: #FFFFFF;
 	vertical-align: center;
-	margin-top: 20px;
-	margin-right: 820px;
+
+	top: 20px;
+	left: -160px;
 }
 
 .intro_profession2 span {
@@ -332,6 +325,22 @@ h1, h2, h3, h4, h5 {
 	vertical-align: center;
 	margin-top: 0px;
 }
+
+.good_box {
+	width: 200px;
+	height: 30px;
+	border: 1px solid black;
+}
+
+.good_box div {
+	border: 1px solid black;
+	position: relative;
+	left: 5px;
+	top: 5px;
+	padding: 5px;
+}
+
+
 
 
 /* ABOUT ME END / КОНЕЦ БЛОКА "ОБО МНЕ" */
