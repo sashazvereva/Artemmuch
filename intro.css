@@ -1,0 +1,94 @@
+
+/* INTRO START / НАЧАЛО ИНТРО */
+.intro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1000px;
+	max-height: 6000px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.intro_background {
+	width: 35%;
+	float: left;
+	justify-content: flex-start;
+	display: flex;
+	z-index: 3;
+	left: 0;
+}
+
+.photo_background {
+	position: absolute;
+	left: 0;
+	width: 40%;
+	height: 600px;
+	background-color: #313F48;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.photo_background_img  {
+	position: absolute;
+	left: 50%;
+	height: 350px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.intro_name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 40px;
+	width: 400px;
+	color: #FFFFFF;
+	align-self: center;
+	vertical-align: center;
+	position: relative;
+}
+
+
+.intro_name span {
+	padding: 10px 25px;
+	background: #041120;
+}
+
+.intro_profession {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+	vertical-align: center;
+
+	top: 20px;
+	left: -50px;
+}
+
+.intro_profession span {
+	padding: 10px 30px;
+	background: #313F48;
+}
+
+
+.intro_profession2 {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+	vertical-align: center;
+
+	top: 20px;
+	left: -160px;
+}
+
+.intro_profession2 span {
+	padding: 10px 30px;
+	background: #313F48;
+}
+/* INTRO END / КОНЕЦ ИНТРО */

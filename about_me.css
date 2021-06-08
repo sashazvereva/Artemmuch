@@ -1,0 +1,144 @@
+
+/* ABOUT ME START / НАЧАЛО БЛОКА "ОБО МНЕ" */
+.about_me {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 40px 0;
+}
+/* Subtitle / Подзаголовок */
+.about_me_text {
+	background: #6D7692;
+	padding: 5px 35px;
+	margin-top: 15px;
+	margin-right: 400px;
+	display: inline-block;
+}
+
+.about_me_text p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: left;
+	line-height: 1.3em;
+}
+
+/* 2 title / 2 заголовок */
+.margin {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+	text-align: center;
+	align-items: center;
+}
+
+.good_box {
+	width: 220px;
+	border: 1px solid #041120;
+}
+
+.good_box div {
+	border: 1px solid #041120;
+	position: relative;
+	left: 5px;
+	top: 5px;
+	padding: 5px;
+}
+
+.triangle_point_subtitle {
+	background: #313F48;
+	padding: 10px 45px;
+	margin-left: 50px;
+}
+
+.triangle_point_subtitle div {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+	color: #FFFFFF;
+	vertical-align: center;
+	margin-top: 0px;
+}
+
+/* 1 Point / 1 Пункт */
+.triangle_point_text {
+	justify-content: center;
+	margin: 20px 150px 0 0;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+	margin-left: 100px;
+}
+
+.triangle_point_text_item {
+	box-shadow: 15px -15px 0px #041120;
+	background: #9CA8CD;
+	padding: 5px 35px;
+}
+
+.triangle_point_text div p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: left;
+	line-height: 1.3em;
+}
+
+.circle {
+	position: relative;
+	width: 100px; 
+	height: 100px;
+	background: #EBEBEB;
+	border-radius: 50%;
+	border: 1px solid #041120;
+	float: left;
+	right: 0;
+	bottom: 50px;
+	right: 90px;
+	z-index: -1;
+}
+
+/* 2 Point / 2 Пункт */
+.triangle_point_text2 {
+	justify-content: center;
+	margin: 20px 150px 0 0;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+}
+
+.triangle_point_text2_item {
+	box-shadow: -15px 15px 0px #041120;
+	background: #9CA8CD;
+	padding: 5px 35px;
+}
+
+.triangle_point_text2 div p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: left;
+	line-height: 1.3em;
+}
+
+.triangle {
+	position: relative;
+	width: 0px; 
+	height: 0px;
+	background: #EBEBEB;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #041120;
+	float: right;
+	right: 0;
+	bottom: 50px;
+	left: 90px;
+	z-index: -1;
+}
+/* ABOUT ME END / КОНЕЦ БЛОКА "ОБО МНЕ" */

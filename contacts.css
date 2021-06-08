@@ -1,0 +1,74 @@
+/* CONTACTS START / НАЧАЛО БЛОКА "КОНТАКТЫ" */
+.contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.contacts_inner {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.contacts_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	text-align: left;
+    padding-top: 20px;
+}
+
+.contacts_point {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contacts_point_icon img {
+    width: 100px;
+}
+
+.contacts_point_desk {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+.contacts_point_text {
+    background-color: #313F48;
+}
+
+.contacts_point_text  {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contacts_point_text div {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+
+	color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+/* CONTACTS END / КОНЕЦ БЛОКА "КОНТАКТЫ" */

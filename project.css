@@ -1,0 +1,205 @@
+/* PROJECTS START / НАЧАЛО БЛОКА "ПРОЕКТЫ" */
+.project {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.project_item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.project_photo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.frame_img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+	border: 1px solid #041120;
+}
+
+.frame_img img {
+	border: 1px solid #041120;
+	position: relative;
+	left: 10px;
+	top: 10px;
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project_img {
+    padding: 30px 0;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.project_table {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+
+.project_table_item {
+    display: flex;
+    flex-direction: row;
+	border-bottom: 1px solid #041120;
+    height: 100px;
+
+}
+
+.project_table_data {
+    background-color: #2D5288;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); 
+    transform: rotate(-90deg); 
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+
+}
+
+.project_table_data div {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #FFFFFF;
+    text-align: center;
+	align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.project_table_text {
+    background-color: #313F48;
+}
+
+.project_table_text div {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.3em;
+
+	color: #FFFFFF;
+    text-align: left;
+	align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+.wrapper {
+	padding: 30px;
+	min-height: 100%;
+	background-image: url("photo/cake.jfif");
+	background-size: cover;
+}
+
+.slider_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.slider_info {
+    padding-right: 100px;
+}
+
+.parallax-slider_title {
+	color: #04112054;
+    margin-top: 10px;
+    text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 144px;
+}
+
+.parallax-slider_text {
+	color: #041120;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.5em;
+
+    margin-top: 20px;
+    text-align: left;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.parallax-slider_text span {
+    display: inline;
+	box-shadow: 0 8px 0 0#6D7692;
+}
+
+.image-slider {
+	padding: 30px 0px 70px 0px;
+}
+
+.image-slider_image {
+	text-align: center;
+}
+
+.image-slider_image img{
+	max-width: 100%;
+    max-height: 450px;
+}
+
+/* Стрелки */
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: #ebebeb00;
+    font-size: 0px;
+}
+
+.swiper-button-prev img {
+    width: 100px;
+    margin-left: 50px;
+}
+
+.swiper-button-next img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #ebebeb00;
+    font-size: 0px;
+}
+
+.parallax-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+    background-color: #041120;
+
+}
+
+/* Автоширина */
+.image-slider .swiper-slide {
+	width: auto;
+}
+
+
+
+
+/* PROJECTS END / КОНЕЦ БЛОКА "ПРОЕКТЫ" */

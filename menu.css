@@ -1,0 +1,136 @@
+
+/* HEADER START / НАЧАЛО НАВИГАЦИОННОГО МЕНЮ */
+.header {
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #041120;
+	z-index: 5;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_logo {
+	text-decoration: none;
+	padding-right: 30px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+/* Nav menu / Навигационное меню */
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 0 10px;
+	margin: 10px;
+
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+	transition: color 0.2s linear;
+}
+
+.nav_link:hover {
+	color: #2D5288;
+}
+
+
+
+
+
+
+
+
+
+.button_resume {
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 20px;
+	position: relative;
+	color: white;
+	border: 1px solid rgba(255, 255, 255, .4);
+	background: none;
+	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+
+.button_resume:before, .button_resume:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.button_resume:before {
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+  
+.button_resume:after {
+	top: 0;
+	right: 0;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+  }
+
+.button_resume:hover:before, 
+.button_resume:hover:after {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.button_resume:hover:before {
+	transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+
+.button_resume:hover:after {
+	transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+
+.button_resume:hover {
+	background: #313F48;
+}
+/* HEADER END / КОНЕЦ НАВИГАЦИОННОГО МЕНЮ */
