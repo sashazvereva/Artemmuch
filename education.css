@@ -64,12 +64,19 @@
 	box-shadow: 0 8px 0 0#2D5288;
 }
 
+.good_box_img {
+	position: relative;
+	display: flex;
+	z-index: 3;
+	left: 200px;
+	top: 50px;
+}
+
 .courses_img {
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	float: right;
+	justify-content: center; 
 	width: 200px; 
 	height: 200px;
 	background: #A8AFC4;
@@ -95,6 +102,7 @@
 	line-height: 1.1em;
 	text-transform: uppercase;
 	margin-left: 50px;
+	z-index: 5;
 }
 
 /* EDUCATION END / КОНЕЦ БЛОКА "ОБРАЗОВАНИЕ" */
