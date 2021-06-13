@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="education.css">
 	<link rel="stylesheet" type="text/css" href="project.css">
 	<link rel="stylesheet" type="text/css" href="contacts.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
 
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -31,11 +32,10 @@
 		<div class="header_inner">
 			<a class="header_logo" href="Artyom.html">Artemmuch</a>
 			<nav class="nav">
-				<a class="nav_link" data-goto=".about_me" href="#">Обо мне</a>
-				<a class="nav_link" data-goto=".education" href="#">Образование</a>
-				<a class="nav_link" data-goto=".project" href="#">Проекты</a>
-				<a class="nav_link" data-goto=".wrapper" href="#">Достижения</a>
-				<a class="nav_link" data-goto=".contacts" href="#">Контакты</a>
+				<a data-goto=".about_me" href="#">Обо мне</a>
+				<a data-goto=".education" href="#">Образование</a>
+				<a data-goto=".project" href="#">Проекты</a>
+				<a data-goto=".wrapper" href="#">Достижения</a>
 			</nav>
 			<a href="https://drive.google.com/file/d/1pFKMCAN9vsi1MGzRzZKIQm2h2GkHQTZd/view?usp=sharing" class="button_resume">Скачать резюме</a>
 		</div>
@@ -71,7 +71,7 @@
 <!-- INTRO END / КОНЕЦ ИНТРО -->
 
 <!-- ABOUT ME START / НАЧАЛО БЛОКА "ОБО МНЕ" -->
-<div class="about_me">
+<div class="about_me" style="padding-top: 80px;">
 	<div class="container">
 		<h1 class="title">
 			<span>
@@ -86,7 +86,7 @@
 				и проходя курсы.
 			</p>
 		</div>
-		<div class="margin">
+		<div class="courses">
 			<div class="good_box">
 				<div>
 					<span class="title2">Навыки</span>
@@ -144,7 +144,9 @@
 					• Настройка окружения, драйверов,<br>
 					подготовка системы для ML<br>
 				</p>
-				<div class="triangle"></div>
+				<div class="triangle">
+					<img src="photo/icons/triangle.svg">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -196,7 +198,7 @@
 			</div>
 		</div>
 
-		<div class="margin">
+		<div class="courses" style="margin-left: 200px;">
 			<div class="good_box">
 				<div>
 					<span class="title2">Курсы</span>
@@ -210,8 +212,8 @@
 		</div>
 
 		<div class="point">
-			<div class="svg_point">
-				<img src="photo/icons/circle.svg">
+			<div class="svg_point_circle">
+				<img src="photo/icons/circle2.svg">
 			</div>
 			<div class="courses_title">
 				<div>
@@ -221,8 +223,8 @@
 		</div>
 
 		<div class="point">
-			<div class="svg_point">
-				<img src="photo/icons/circle.svg">
+			<div class="svg_point_circle">
+				<img src="photo/icons/circle2.svg">
 			</div>
 			<div class="courses_title">
 				<div>
@@ -248,15 +250,17 @@
 		<div class="project_item">
 			<div class="project_photo">
 				<div class="frame_img">
-					<img src="photo/project_img.png" alt="">
+					<img src="photo/project_img.png" >
 				</div>
-				<img class="project_img" src="photo/icons/project_icon.png" alt="">
+				<img class="project_img" src="photo/icons/project_icon.png" >
 			</div>
 			<div class="project_table">
 				<div class="project_table_item">
-					<div class="project_table_data">
-						<div>
-							Сейчас
+					<div class="project_table_inner">
+						<div class="project_table_data">
+							<div>
+								Сейчас
+							</div>
 						</div>
 					</div>
 					<div class="project_table_text">
@@ -273,137 +277,140 @@
 
 
 <div class="wrapper">
-	<div class="parallax-slider swiper-container">
-		<div class="parallax-slider_bg data-swiper-parallax="-20%></div>
+	<div class="container">
+		<div class="parallax-slider swiper-container">
+			<div class="parallax-slider_bg data-swiper-parallax="-20%></div>
 
-		<div class="parallax-slider_wrapper swiper-wrapper">
+			<div class="parallax-slider_wrapper swiper-wrapper">
 
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg" >
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2017</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							<span>13-ая</span> Международная ярмарка<br>инноваций SIIF 2017, диплом
+							за высокий уровень разработки.
 						</div>
 					</div>
 				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2017</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						<span>13-ая</span> Международная ярмарка<br>инноваций SIIF 2017, диплом
-						за высокий уровень разработки.
+
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg" >
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2018</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							Международный конкурс молодежных инноваций<br>
+							и разработок <span>«Новое время»</span>, золотая медаль, награда от салона
+							<span>«Архимед»</span> за лучшее изобретение среди молодежи.
+						</div>
+					</div>
+				</div>
+
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg" >
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2019</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							21-й Московский международный Салон Изобретений и
+							инновационных технологий <span>«Архимед»</span>, золотая медаль от
+							члена Европейской академии наук, серебряная медаль в
+							конкурсе <span>«Инновационный потенциал молодежи»</span> и бронзовая
+							медаль от международного жюри салона.
+						</div>
+					</div>
+				</div>
+
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2019</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							Специальная премия Всероссийского общества изобретателей<br>
+							и рационализаторов.<br>
+							VI открытый республиканский конкурс компьютерных
+							проектов <span>«КИТ-2019»</span>, <br><span>1 место</span>.
+						</div>
+					</div>
+				</div>
+
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2020</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							Балтийский научно-инженерный конкурс, диплом II степени
+							и специальная премия.
+							Открытый межрегиональный хакатон <span>«VR/AR Crimea»</span> в
+							городе Севастополе, <span>1 место</span>.
+						</div>
+					</div>
+				</div>
+
+				<div class="parallax-slider_slide swiper-slide slider_flex">
+					<div class="image-slider_wrapper swiper-wrapper">
+						<div class="image-slider_slide swiper-slide">
+							<div class="image-slider_image">
+								<img src="photo/project1.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="slider_info">
+						<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2021</h2>
+						<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
+							Олимпиада НТИ по профилю <span>«Искусственный интеллект»</span>,
+							победитель, <span>4 место</span> в командном зачете
+							Олимпиада НТИ по профилю <span>«Автоматизация бизнес-процессов»</span>,
+							победитель, <span>7 место</span> в индивидуальном зачете
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2018</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						Международный конкурс молодежных инноваций<br>
-						и разработок <span>«Новое время»</span>, золотая медаль, награда от салона
-						<span>«Архимед»</span> за лучшее изобретение среди молодежи.
-					</div>
-				</div>
+			<div class="swiper-button-prev">
+				<img src="photo/icons/point2.svg">
 			</div>
-
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2019</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						21-й Московский международный Салон Изобретений и
-						инновационных технологий <span>«Архимед»</span>, золотая медаль от
-						члена Европейской академии наук, серебряная медаль в
-						конкурсе <span>«Инновационный потенциал молодежи»</span> и бронзовая
-						медаль от международного жюри салона.
-					</div>
-				</div>
+			<div class="swiper-button-next">
+				<img src="photo/icons/point.svg">
 			</div>
-
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2019</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						Специальная премия Всероссийского общества изобретателей<br>
-						и рационализаторов.<br>
-						VI открытый республиканский конкурс компьютерных
-						проектов <span>«КИТ-2019»</span>, <br><span>1 место</span>.
-					</div>
-				</div>
-			</div>
-
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2020</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						Балтийский научно-инженерный конкурс, диплом II степени
-						и специальная премия.
-						Открытый межрегиональный хакатон <span>«VR/AR Crimea»</span> в
-						городе Севастополе, <span>1 место</span>.
-					</div>
-				</div>
-			</div>
-
-			<div class="parallax-slider_slide swiper-slide slider_flex">
-				<div class="image-slider_wrapper swiper-wrapper">
-					<div class="image-slider_slide swiper-slide">
-						<div class="image-slider_image">
-							<img src="photo/project1.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="slider_info">
-					<h2 class="parallax-slider_title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">2021</h2>
-					<div class="parallax-slider_text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-duration="500">
-						Олимпиада НТИ по профилю <span>«Искусственный интеллект»</span>,
-						победитель, <span>4 место</span> в командном зачете
-						Олимпиада НТИ по профилю <span>«Автоматизация бизнес-процессов»</span>,
-						победитель, <span>7 место</span> в индивидуальном зачете
-					</div>
-				</div>
-			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-
-		<div class="swiper-button-prev">
-			<img src="photo/icons/point2.svg" alt="">
-		</div>
-        <div class="swiper-button-next">
-			<img src="photo/icons/point.svg" alt="">
-		</div>
-		<div class="swiper-pagination"></div>
 	</div>
 </div>
 <!-- PROJECTS END / КОНЕЦ БЛОКА "ПРОЕКТЫ" -->
 
 
 <!-- CONTACTS START / НАЧАЛО БЛОКА "КОНТАКТЫ" -->
+<!--
 <div class="contacts">
 	<div class="container">
 		<h1 class="title">
@@ -411,75 +418,174 @@
 				Контакты
 			</span>
 		</h1>
-		<div class="contacts_inner">
-			<div class="contacts_item">
-				<div class="contacts_point">
-					<div class="contacts_point_icon">
-						<img src="photo/icons/icon_back.svg" alt="">
-					</div>
-				<div class="contacts_point_desk">
-					<div class="contacts_point_text">
-						<div>
-							@Artemmuch
+		<div class="contacts_block">
+			<div class="contacts_inner">
+				<div class="contacts_item">
+					<div class="contacts_point">
+						<div class="contacts_point_icon">
+							<img src="photo/icons/icon_back.svg">
+							<div class="contacts_point_icon_inner">
+								<img src="photo/icons/telegram.png">
+							</div>
+						</div>
+						<div class="contacts_point_desk">
+							<div class="contacts_point_text">
+								<a href="https://t-do.ru/Artemmuch">
+									@Artemmuch
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="contacts_item">
+					<div class="contacts_point">
+						<div class="contacts_point_icon">
+							<img src="photo/icons/icon_back.svg">
+							<div class="contacts_point_icon_inner" style="bottom: 7px; left: 5px;">
+								<img src="photo/icons/email.png">
+							</div>
+						</div>
+						<div class="contacts_point_desk">
+							<div class="contacts_point_text">
+								<a href="mailto:artdorokhin@ya.ru">
+									artdorokhin@ya.ru
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="contacts_item">
-				<div class="contacts_point">
-					<div class="contacts_point_icon">
-						<img src="photo/icons/icon_back.svg" alt="">
-					</div>
-				<div class="contacts_point_desk">
-					<div class="contacts_point_text">
-						<div>
-							artdorokhin@ya.ru
+			<div class="contacts_inner" style="margin-left: 20px;">
+				<div class="contacts_item">
+					<div class="contacts_point">
+						<div class="contacts_point_icon">
+							<img src="photo/icons/icon_back.svg">
+							<div class="contacts_point_icon_inner" style="bottom: 7px; left: 3px;">
+								<img src="photo/icons/vk.png">
+							</div>
+						</div>
+						<div class="contacts_point_desk">
+							<div class="contacts_point_text">
+								<a href="https://vk.com/artdorokhin">
+									vk.com/artdorokhin
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				</div>
-			</div>
-		</div>
-		<!--
-		<div class="contacts_inner">
-			<div class="contacts_item">
-				<div class="contacts_point">
-					<div class="contacts_point_icon">
-						<img src="photo/icons/icon_back.svg" alt="">
-					</div>
-				<div class="contacts_point_desk">
-					<div class="contacts_point_text">
-						<div>
-							vk.com/artdorokhin
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
 
-			<div class="contacts_item">
-				<div class="contacts_point">
-					<div class="contacts_point_icon">
-						<img src="photo/icons/icon_back.svg" alt="">
-					</div>
-				<div class="contacts_point_desk">
-					<div class="contacts_point_text">
-						<div>
-							+7(978)884-37-54 
+				<div class="contacts_item">
+					<div class="contacts_point">
+						<div class="contacts_point_icon">
+							<img src="photo/icons/icon_back.svg">
+							<div class="contacts_point_icon_inner" style="bottom:5px; left: 8px;">
+								<img src="photo/icons/call.png" style="width: 35px;">
+							</div>
+						</div>
+						<div class="contacts_point_desk">
+							<div class="contacts_point_text">
+								<a href="tel:+79788843754">
+									+7 978 884 37 54 
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				</div>
 			</div>
 		</div>
-		-->
-		
 	</div>
 </div>
+-->
 <!-- CONTACTS END / КОНЕЦ БЛОКА "КОНТАКТЫ" -->
 
+<!-- FOOTER START / НАЧАЛО ПОДВАЛА -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer_inner">
+			<a class="title_footer" href="Artyom.html">Контакты</a>
+			
+			<div class="footer_block">
+				<div class="footer_inner">
+					<div class="footer_item">
+						<div class="footer_point">
+							<div class="footer_point_icon">
+								<img src="photo/icons/icon_back.svg">
+								<div class="footer_point_icon_inner">
+									<img src="photo/icons/telegram.png">
+								</div>
+							</div>
+							<div class="footer_point_desk">
+								<div class="footer_point_text">
+									<a href="https://t-do.ru/Artemmuch">
+										@Artemmuch
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer_item">
+						<div class="footer_point">
+							<div class="footer_point_icon">
+								<img src="photo/icons/icon_back.svg">
+								<div class="footer_point_icon_inner" style="bottom: 7px; left: 2px;">
+									<img src="photo/icons/email.png">
+								</div>
+							</div>
+							<div class="footer_point_desk">
+								<div class="footer_point_text">
+									<a href="mailto:artdorokhin@ya.ru">
+										artdorokhin@ya.ru
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_inner">
+					<div class="footer_item">
+						<div class="footer_point">
+							<div class="footer_point_icon">
+								<img src="photo/icons/icon_back.svg">
+								<div class="footer_point_icon_inner" style="bottom: 7px; left: 2px;">
+									<img src="photo/icons/vk.png">
+								</div>
+							</div>
+							<div class="footer_point_desk">
+								<div class="footer_point_text">
+									<a href="https://vk.com/artdorokhin">
+										vk.com/artdorokhin
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer_item">
+						<div class="footer_point">
+							<div class="footer_point_icon">
+								<img src="photo/icons/icon_back.svg">
+								<div class="footer_point_icon_inner" style="bottom:6px; left: 7px;">
+									<img src="photo/icons/call.png" style="width: 22px;">
+								</div>
+							</div>
+							<div class="footer_point_desk">
+								<div class="footer_point_text">
+									<a href="tel:+79788843754">
+										+7 978 884 37 54 
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- FOOTER END / КОНЕЦ ПОДВАЛА -->
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="script.js"></script>

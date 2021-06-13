@@ -102,7 +102,12 @@
 	line-height: 1.1em;
 	text-transform: uppercase;
 	margin-left: 50px;
-	z-index: 5;
+	z-index: 2;
+}
+
+.svg_point_circle img {
+	width: 75px;
+	height: 75px;
 }
 
 /* EDUCATION END / КОНЕЦ БЛОКА "ОБРАЗОВАНИЕ" */

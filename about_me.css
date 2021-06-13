@@ -28,15 +28,16 @@
 }
 
 /* 2 title / 2 заголовок */
-.margin {
+.courses {
 	display: flex;
 	justify-content: center;
-	margin: 20px 0;
+	margin: 15px 0;
 	text-align: center;
 	align-items: center;
 }
 
 .good_box {
+	margin-top: 15px;
 	width: 220px;
 	border: 1px solid #041120;
 }
@@ -106,7 +107,7 @@
 /* 2 Point / 2 Пункт */
 .triangle_point_text2 {
 	justify-content: center;
-	margin: 20px 150px 0 0;
+	margin: 20px 150px -50px 0;
 	text-align: center;
 	align-items: center;
 	display: inline-block;
@@ -129,16 +130,17 @@
 
 .triangle {
 	position: relative;
-	width: 0px; 
-	height: 0px;
-	background: #EBEBEB;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid #041120;
+	width: 100px; 
+	height: 100px;
+
 	float: right;
 	right: 0;
 	bottom: 50px;
 	left: 90px;
 	z-index: -1;
+}
+
+.triangle img {
+	width: 100px; 
 }
 /* ABOUT ME END / КОНЕЦ БЛОКА "ОБО МНЕ" */
