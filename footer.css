@@ -22,7 +22,7 @@
 	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
-	margin: 0 100px 0 30px;
+	margin: 0 20px;
 }
 
 .footer_block {
@@ -96,3 +96,14 @@
 	color: #9CA8CD;
 }
 /* FOOTER END / КОНЕЦ ПОДВАЛА */
+
+
+.nav img {
+	display: flex;
+	margin: 0;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	background-size: cover;
+	margin-left: 25px;
+}
