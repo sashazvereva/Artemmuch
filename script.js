@@ -56,7 +56,7 @@ new Swiper('.parallax-slider', {
 });
 
 /* Smooth slide navigation */
-const menuLinks = document.querySelectorAll('.nav_link[data-goto]');
+const menuLinks = document.querySelectorAll('a[data-goto]');
 if(menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
