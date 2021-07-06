@@ -13,7 +13,7 @@
 	align-items: center;
 }
 
-.title_footer {
+.footer_title {
     text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -22,64 +22,33 @@
 	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
-	margin: 0 20px;
 }
 
-.footer_block {
+.nav_footer {
 	display: flex;
 	flex-direction: row;
+	justify-content: left;
+	margin-left: 50px;
 }
 
-.footer_inner {
+.nav_footer div {
+	display: inline-flex;
+}
+
+.nav_footer div img {
 	display: flex;
-	flex-direction: row;
+	margin: auto;
+
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	background-size: cover;
+	margin-left: 25px;
 }
 
-.footer_item {
-	display: flex;
-	justify-content: flex-start;
-	text-align: left;
-}
+.nav_footer div a {
+	margin: auto;
 
-.footer_point {
-	display: flex;
-	flex-direction: row;
-}
-
-.footer_point_icon img {
-    width: 65px;
-	display: flex;
-	margin: 0 auto;
-}
-
-.footer_point_icon_inner {
-	position: relative;
-}
-
-.footer_point_icon_inner img {
-	position: absolute;
-	bottom: 17px;
-	left: 17px;
-	width: 27px;
-}
-
-.footer_point_desk {
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-}
-
-
-.footer_point_text  {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: auto;
-	cursor: pointer;
-}
-
-.footer_point_text a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 15px;
@@ -92,18 +61,28 @@
 	transition: .3s ease-in-out;
 }
 
-.footer_point_text a:hover {
-	color: #9CA8CD;
+@media (max-width: 1363px) {
+	.nav_footer div img {
+		width: 60px;
+		height: 60px;
+		margin-left: 10px;
+
+	}
+
+	.nav_footer div a {
+		font-size: calc(10px + (15 - 10)*((100vw - 320px)/(1363 - 320)));
+		padding: calc(0px + (15 - 0)*((100vw - 320px)/(1363 - 320)));
+	}
+
+	.footer_title {
+		font-size: calc(15px + (20 - 15)*((100vw - 320px)/(1363 - 320)));
+
+	}
+
+	.nav_footer {
+		margin-left: 5px;
+
+	}
+
 }
 /* FOOTER END / КОНЕЦ ПОДВАЛА */
-
-
-.nav img {
-	display: flex;
-	margin: 0;
-	width: 80px;
-	height: 80px;
-	object-fit: cover;
-	background-size: cover;
-	margin-left: 25px;
-}
